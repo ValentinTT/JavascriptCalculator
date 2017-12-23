@@ -1,4 +1,122 @@
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html,
 body {
-  height: 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #19353E;
+  width: 100vw;
+  height: 100vh;
+  padding: 10px;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Share Tech Mono";
+}
+
+.calculator-container .calculator {
+  background: #15A9D7;
+  width: 300px;
+  padding: 15px;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 5px 0px 0px #00A471;
+          box-shadow: 0px 5px 0px 0px #00A471;
+}
+
+.calculator-container .calculator .calculator-display {
+  background: #777777;
+  color: #fff;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.calculator-container .calculator .calculator-display .main-display, .calculator-container .calculator .calculator-display .secondary-display {
+  margin: 0;
+  padding: 0 10px;
+  text-align: right;
+}
+
+.calculator-container .calculator .calculator-display .main-display {
+  padding-top: 10px;
+}
+
+.calculator-container .calculator .calculator-display .secondary-display {
+  padding-bottom: 10px;
+}
+
+.calculator-container .calculator .calculator-keyboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  justify-items: center;
+}
+
+.calculator-container .calculator .calculator-keyboard button {
+  color: #ffffff;
+  background-color: #000000;
+  height: 50px;
+  width: 60px;
+  margin: 5px 5px;
+  border-width: 0;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 5px 0px 0px #3d3d3d;
+          box-shadow: 0px 5px 0px 0px #3d3d3d;
+  font-size: 22px;
+  font-family: "Share Tech Mono";
+  font-weight: bold;
+}
+
+.calculator-container .calculator .calculator-keyboard button:focus {
+  outline: 0;
+}
+
+.calculator-container .calculator .calculator-keyboard button:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  -webkit-box-shadow: 0px 1px 0px 0px #3d3d3d;
+          box-shadow: 0px 1px 0px 0px #3d3d3d;
+}
+
+.calculator-container .calculator .calculator-keyboard button:hover {
+  background-color: #000;
+}
+
+footer {
+  margin-top: 15px;
+}
+
+footer h4 {
+  color: #fff;
+  font-size: 1rem;
+  font-family: "Arbutus";
+  text-align: center;
+}
+
+footer h4 a {
+  color: #D7154C;
+  display: inline-block;
+  text-decoration: none;
+}
+
+footer h4 a:hover {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */
