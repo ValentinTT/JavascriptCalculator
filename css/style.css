@@ -33,33 +33,42 @@ body {
 }
 
 .calculator-container .calculator {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   background: #15A9D7;
   width: 300px;
   padding: 15px;
   border-radius: 25px;
-  -webkit-box-shadow: 0px 5px 0px 0px #00A471;
-          box-shadow: 0px 5px 0px 0px #00A471;
 }
 
 .calculator-container .calculator .calculator-display {
   background: #777777;
+  background: linear-gradient(45deg, #9c9c9c, #777777);
   color: #fff;
   margin: 10px;
+  padding-left: 10px;
   border-radius: 10px;
 }
 
 .calculator-container .calculator .calculator-display .main-display, .calculator-container .calculator .calculator-display .secondary-display {
   margin: 0;
-  padding: 0 10px;
   text-align: right;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-right: 9px solid #777777;
+  overflow: hidden;
 }
 
 .calculator-container .calculator .calculator-display .main-display {
   padding-top: 10px;
+  border-top-right-radius: 10px;
 }
 
 .calculator-container .calculator .calculator-display .secondary-display {
   padding-bottom: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .calculator-container .calculator .calculator-keyboard {
@@ -99,6 +108,12 @@ body {
   background-color: #000;
 }
 
+.calculator-container .calculator .calculator-keyboard button:last-child {
+  width: 135px;
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
 footer {
   margin-top: 15px;
 }
@@ -108,6 +123,7 @@ footer h4 {
   font-size: 1rem;
   font-family: "Arbutus";
   text-align: center;
+  text-shadow: 2px 2px 20px black;
 }
 
 footer h4 a {
